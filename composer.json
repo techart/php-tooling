@@ -1,7 +1,7 @@
 {
     "name": "techart/php-tooling",
     "description": "Набор инструментов для поддержки PHP-проектов",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "authors": [
         {
             "name": "Techart",
