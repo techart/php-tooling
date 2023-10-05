@@ -1,21 +1,26 @@
 {
     "name": "techart/php-tooling",
     "description": "Набор инструментов для поддержки PHP-проектов",
-    "version": "0.0.5",
+    "version": "0.1.0",
     "authors": [
         {
             "name": "Techart",
             "homepage": "http://web-techart.ru/"
         }
     ],
-    "require": {
+    "require-dev": {
+		"php": "^8.1",
         "sirbrillig/phpcs-variable-analysis": "^2.11",
         "squizlabs/php_codesniffer": "^3.7",
-        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "phpunit/phpunit": "^10.3"
     },
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
-    }
+    },
+	"scripts": {
+		"phpunit:run": "./vendor/bin/phpunit ./tests/"
+	}
 }
